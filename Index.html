@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Script Atualizado</title>
+  <style>
+    body {
+      background:#000;
+      color:#fff;
+      font-family:Arial,Helvetica,sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      margin:0;
+    }
+    .card {
+      background:#101010;
+      padding:28px;
+      border-radius:12px;
+      text-align:center;
+      width:320px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    img.logo {
+      width:120px;
+      margin-bottom:12px;
+    }
+    button {
+      background:#06f;
+      border:none;
+      padding:12px 18px;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+      color:#fff;
+    }
+    button:hover {
+      background:#005ce6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="logo.png" alt="Logo Delta">
+    <h2>Script Atualizado</h2>
+    <p>Clique no botão para abrir a página de compartilhamento.</p>
+    <button id="getKey">Get Key</button>
+  </div>
+
+  <script>
+    document.getElementById('getKey').addEventListener('click', function(){
+      window.location.href = 'https://www.roblox.com/share?code=6d13d549b407cb41b7c13621b21b0838&type=Server';
+    });
+  </script>
+</body>
+</html>
